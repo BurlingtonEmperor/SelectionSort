@@ -4,6 +4,21 @@ public class Main {
     insertionSort(example);
   }
 
+  public static void bubbleSort (int[] nums) {
+    int temp = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+      for(int j = 1; j < (nums.length - i); j++){  
+        if (nums[j - 1] > nums[j]) {  
+          temp = nums[j - 1];  
+          nums[j -1 ] = nums[j];  
+          nums[j] = temp;  
+       }  
+        
+      } 
+    }
+  }
+
   public static void insertionSort (int[] nums) {
     // int leastValue = nums[0];
     // int leastPosition = 0;
